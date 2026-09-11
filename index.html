@@ -72,7 +72,7 @@
         </div>
     </section>
 
-    <!-- NOVA SEÇÃO: Promoção de Lançamento -->
+    <!-- Promoção de Lançamento -->
     <section class="py-12 bg-black border-y-4 border-[#f6a700] relative overflow-hidden">
         <!-- Efeito de luz ao fundo -->
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-full bg-[#f6a700] blur-[150px] opacity-20 pointer-events-none"></div>
@@ -102,104 +102,128 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
                 <h2 class="text-3xl font-bold tracking-tight text-black">Estruturas Focadas na ECT</h2>
-                <p class="text-neutral-600 mt-3">Selecione uma disciplina abaixo para ver fotos e exemplos de slides disponíveis para escolha.</p>
+                
+                <!-- AVISO EXPLÍCITO PARA CLICAR -->
+                <div class="mt-5 inline-flex items-center justify-center gap-3 bg-[#f6a700]/10 border border-[#f6a700]/40 px-5 py-3 rounded-xl shadow-sm">
+                    <span class="animate-bounce text-2xl">👇</span>
+                    <p class="text-black font-bold text-sm sm:text-base">Clique na sua disciplina para abrir os modelos disponíveis!</p>
+                </div>
+
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Categoria 1 (CTS) -->
-                <div data-aos="fade-up" data-aos-delay="0" onclick="abrirGaleria('cts')" class="bg-white rounded-xl border border-neutral-200 hover:border-[#f6a700] shadow-sm hover:shadow-md overflow-hidden transition flex flex-col cursor-pointer group">
+                <div data-aos="fade-up" data-aos-delay="0" onclick="abrirGaleria('cts')" class="bg-white rounded-xl border border-neutral-200 hover:border-[#f6a700] shadow-sm hover:shadow-lg overflow-hidden transition duration-300 flex flex-col cursor-pointer group">
                     <div class="h-48 w-full overflow-hidden bg-neutral-100 relative">
-                        <img src="Imagens/CTS-01.jpg" alt="Ciência, Tecnologia e Sociedade" class="w-full h-full object-cover group-hover:scale-105 transition duration-350">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-sm text-sm">Visualizar Modelos</span>
-                        </div>
+                        <img src="Imagens/CTS-01.jpg" alt="Ciência, Tecnologia e Sociedade" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-[#f6a700] text-black text-xs font-bold px-3 py-1.5 rounded-lg shadow-md">10 Opções</span>
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"></div>
                     </div>
-                    <div class="p-6 flex-grow">
+                    <div class="p-6 flex-grow flex flex-col">
                         <h3 class="text-lg font-semibold text-black mb-2 group-hover:text-[#f6a700] transition">Ciência, Tecnologia e Sociedade</h3>
-                        <p class="text-sm text-neutral-600 leading-relaxed">
+                        <p class="text-sm text-neutral-600 leading-relaxed flex-grow mb-5">
                             Foco em slides com estrutura conceitual limpa, ideais para debates, ética profissional, impactos da tecnologia e temas históricos.
                         </p>
+                        <div class="w-full bg-neutral-100 text-neutral-600 group-hover:bg-[#f6a700] group-hover:text-black font-bold py-2.5 rounded-lg transition duration-300 flex items-center justify-center gap-2">
+                            <span>Abrir Modelos</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Categoria 2 (Ecologia) -->
-                <div data-aos="fade-up" data-aos-delay="150" onclick="abrirGaleria('ecologia')" class="bg-white rounded-xl border border-neutral-200 hover:border-[#f6a700] shadow-sm hover:shadow-md overflow-hidden transition flex flex-col cursor-pointer group">
+                <div data-aos="fade-up" data-aos-delay="100" onclick="abrirGaleria('ecologia')" class="bg-white rounded-xl border border-neutral-200 hover:border-[#f6a700] shadow-sm hover:shadow-lg overflow-hidden transition duration-300 flex flex-col cursor-pointer group">
                     <div class="h-48 w-full overflow-hidden bg-neutral-100 relative">
-                        <img src="Imagens/MA-01.jpg" alt="Ecologia e Meio Ambiente" class="w-full h-full object-cover group-hover:scale-105 transition duration-350">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-sm text-sm">Visualizar Modelos</span>
-                        </div>
+                        <img src="Imagens/MA-01.jpg" alt="Ecologia e Meio Ambiente" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-[#f6a700] text-black text-xs font-bold px-3 py-1.5 rounded-lg shadow-md">10 Opções</span>
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"></div>
                     </div>
-                    <div class="p-6 flex-grow">
+                    <div class="p-6 flex-grow flex flex-col">
                         <h3 class="text-lg font-semibold text-black mb-2 group-hover:text-[#f6a700] transition">Ecologia e Meio Ambiente</h3>
-                        <p class="text-sm text-neutral-600 leading-relaxed">
+                        <p class="text-sm text-neutral-600 leading-relaxed flex-grow mb-5">
                             Design focado em sustentabilidade, contendo elementos visuais, esquemas e tópicos sobre conservação, biomas e desenvolvimento.
                         </p>
+                        <div class="w-full bg-neutral-100 text-neutral-600 group-hover:bg-[#f6a700] group-hover:text-black font-bold py-2.5 rounded-lg transition duration-300 flex items-center justify-center gap-2">
+                            <span>Abrir Modelos</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Categoria 3 (Projetos) -->
-                <div data-aos="fade-up" data-aos-delay="300" onclick="abrirGaleria('projetos')" class="bg-white rounded-xl border border-neutral-200 hover:border-[#f6a700] shadow-sm hover:shadow-md overflow-hidden transition flex flex-col cursor-pointer group">
+                <div data-aos="fade-up" data-aos-delay="200" onclick="abrirGaleria('projetos')" class="bg-white rounded-xl border border-neutral-200 hover:border-[#f6a700] shadow-sm hover:shadow-lg overflow-hidden transition duration-300 flex flex-col cursor-pointer group">
                     <div class="h-48 w-full overflow-hidden bg-neutral-100 relative">
-                        <img src="Imagens/ICT-01.jpg" alt="Introdução a C&T e Projetos" class="w-full h-full object-cover group-hover:scale-105 transition duration-350">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-sm text-sm">Visualizar Modelos</span>
-                        </div>
+                        <img src="Imagens/ICT-01.jpg" alt="Introdução a C&T e Projetos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-[#f6a700] text-black text-xs font-bold px-3 py-1.5 rounded-lg shadow-md">10 Opções</span>
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"></div>
                     </div>
-                    <div class="p-6 flex-grow">
+                    <div class="p-6 flex-grow flex flex-col">
                         <h3 class="text-lg font-semibold text-black mb-2 group-hover:text-[#f6a700] transition">Introdução a C&T e Projetos</h3>
-                        <p class="text-sm text-neutral-600 leading-relaxed">
+                        <p class="text-sm text-neutral-600 leading-relaxed flex-grow mb-5">
                             Projetos visuais acolhedores para calouros, perfeitos para seminários de integração e apresentações iniciais da grade acadêmica.
                         </p>
+                        <div class="w-full bg-neutral-100 text-neutral-600 group-hover:bg-[#f6a700] group-hover:text-black font-bold py-2.5 rounded-lg transition duration-300 flex items-center justify-center gap-2">
+                            <span>Abrir Modelos</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Categoria 4 (Tecnologias) -->
-                <div data-aos="fade-up" data-aos-delay="0" onclick="abrirGaleria('tecnologias')" class="bg-white rounded-xl border border-neutral-200 hover:border-[#f6a700] shadow-sm hover:shadow-md overflow-hidden transition flex flex-col cursor-pointer group">
+                <div data-aos="fade-up" data-aos-delay="0" onclick="abrirGaleria('tecnologias')" class="bg-white rounded-xl border border-neutral-200 hover:border-[#f6a700] shadow-sm hover:shadow-lg overflow-hidden transition duration-300 flex flex-col cursor-pointer group">
                     <div class="h-48 w-full overflow-hidden bg-neutral-100 relative">
-                        <img src="Imagens/AT-01.jpg" alt="Algoritmos e Tecnologias" class="w-full h-full object-cover group-hover:scale-105 transition duration-350">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-sm text-sm">Visualizar Modelos</span>
-                        </div>
+                        <img src="Imagens/AT-01.jpg" alt="Algoritmos e Tecnologias" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-[#f6a700] text-black text-xs font-bold px-3 py-1.5 rounded-lg shadow-md">10 Opções</span>
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"></div>
                     </div>
-                    <div class="p-6 flex-grow">
+                    <div class="p-6 flex-grow flex flex-col">
                         <h3 class="text-lg font-semibold text-black mb-2 group-hover:text-[#f6a700] transition">Algoritmos e Tecnologias</h3>
-                        <p class="text-sm text-neutral-600 leading-relaxed">
+                        <p class="text-sm text-neutral-600 leading-relaxed flex-grow mb-5">
                             Layouts adaptados para mostrar trechos de código limpos, diagramas de arquitetura, fluxo de processos e sistemas de computação.
                         </p>
+                        <div class="w-full bg-neutral-100 text-neutral-600 group-hover:bg-[#f6a700] group-hover:text-black font-bold py-2.5 rounded-lg transition duration-300 flex items-center justify-center gap-2">
+                            <span>Abrir Modelos</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Categoria 5 (Exatas) -->
-                <div data-aos="fade-up" data-aos-delay="150" onclick="abrirGaleria('exatas')" class="bg-white rounded-xl border border-neutral-200 hover:border-[#f6a700] shadow-sm hover:shadow-md overflow-hidden transition flex flex-col cursor-pointer group">
+                <div data-aos="fade-up" data-aos-delay="100" onclick="abrirGaleria('exatas')" class="bg-white rounded-xl border border-neutral-200 hover:border-[#f6a700] shadow-sm hover:shadow-lg overflow-hidden transition duration-300 flex flex-col cursor-pointer group">
                     <div class="h-48 w-full overflow-hidden bg-neutral-100 relative">
-                        <img src="Imagens/EA-01.jpg" alt="Ciências Exatas Aplicadas" class="w-full h-full object-cover group-hover:scale-105 transition duration-350">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-sm text-sm">Visualizar Modelos</span>
-                        </div>
+                        <img src="Imagens/EA-01.jpg" alt="Ciências Exatas Aplicadas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-[#f6a700] text-black text-xs font-bold px-3 py-1.5 rounded-lg shadow-md">10 Opções</span>
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"></div>
                     </div>
-                    <div class="p-6 flex-grow">
+                    <div class="p-6 flex-grow flex flex-col">
                         <h3 class="text-lg font-semibold text-black mb-2 group-hover:text-[#f6a700] transition">Ciências Exatas Aplicadas</h3>
-                        <p class="text-sm text-neutral-600 leading-relaxed">
+                        <p class="text-sm text-neutral-600 leading-relaxed flex-grow mb-5">
                             Estruturação visual elegante para gráficos de física, fórmulas matemáticas de cálculo, vetores e demonstrações científicas exatas.
                         </p>
+                        <div class="w-full bg-neutral-100 text-neutral-600 group-hover:bg-[#f6a700] group-hover:text-black font-bold py-2.5 rounded-lg transition duration-300 flex items-center justify-center gap-2">
+                            <span>Abrir Modelos</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Categoria 6 (TCC) -->
-                <div data-aos="fade-up" data-aos-delay="300" onclick="abrirGaleria('tcc')" class="bg-white rounded-xl border border-neutral-200 hover:border-[#f6a700] shadow-sm hover:shadow-md overflow-hidden transition flex flex-col cursor-pointer group">
+                <div data-aos="fade-up" data-aos-delay="200" onclick="abrirGaleria('tcc')" class="bg-white rounded-xl border border-neutral-200 hover:border-[#f6a700] shadow-sm hover:shadow-lg overflow-hidden transition duration-300 flex flex-col cursor-pointer group">
                     <div class="h-48 w-full overflow-hidden bg-neutral-100 relative">
-                        <img src="Imagens/TCC-01.jpg" alt="Metodologia e Relatórios de TCC" class="w-full h-full object-cover group-hover:scale-105 transition duration-350">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-sm text-sm">Visualizar Modelos</span>
-                        </div>
+                        <img src="Imagens/TCC-01.jpg" alt="Metodologia e Relatórios de TCC" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-[#f6a700] text-black text-xs font-bold px-3 py-1.5 rounded-lg shadow-md">10 Opções</span>
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"></div>
                     </div>
-                    <div class="p-6 flex-grow">
+                    <div class="p-6 flex-grow flex flex-col">
                         <h3 class="text-lg font-semibold text-black mb-2 group-hover:text-[#f6a700] transition">Metodologia e Relatórios de TCC</h3>
-                        <p class="text-sm text-neutral-600 leading-relaxed">
+                        <p class="text-sm text-neutral-600 leading-relaxed flex-grow mb-5">
                             Slides formatados para projetos finais, com divisão clara de introdução, justificativa, resultados e referências em padrão acadêmico.
                         </p>
+                        <div class="w-full bg-neutral-100 text-neutral-600 group-hover:bg-[#f6a700] group-hover:text-black font-bold py-2.5 rounded-lg transition duration-300 flex items-center justify-center gap-2">
+                            <span>Abrir Modelos</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
                     </div>
                 </div>
 
